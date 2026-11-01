@@ -1,0 +1,45 @@
+/*
+ * Dirty Tree Warning
+ * Copyright (C) 2026 Top Tier Content
+ * SPDX-License-Identifier: GPL-3.0-or-later
+ *
+ * Large, prominent warning that follows the active Obsidian theme.
+ */
+
+.modal.dirty-tree-modal {
+  width: 50vw;
+  height: 50vh;
+  min-width: 420px;
+  min-height: 260px;
+  max-width: 90vw;
+  max-height: 90vh;
+  padding: 0;
+  border: 1px solid var(--background-modifier-border);
+  border-radius: var(--radius-l);
+  background-color: var(--background-primary);
+  box-shadow:
+    0 24px 48px rgba(0, 0, 0, 0.35),
+    0 8px 16px rgba(0, 0, 0, 0.25);
+}
+
+/* While Obsidian is closing, the warning is display-only (no close button). */
+.modal.dirty-tree-modal.dirty-tree-modal-quit .modal-close-button {
+  display: none;
+}
+
+.modal.dirty-tree-modal .modal-content {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal.dirty-tree-modal .dirty-tree-message {
+  text-align: center;
+  color: var(--text-normal);
+  font-family: var(--font-interface);
+  font-size: 1.75rem;
+  font-weight: var(--font-semibold, 600);
+  line-height: 1.4;
+  letter-spacing: 0.02em;
+}
