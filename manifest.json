@@ -1,0 +1,10 @@
+{
+  "id": "dirty-tree-warning",
+  "name": "Dirty Tree Warning",
+  "version": "1.0.0",
+  "minAppVersion": "1.5.0",
+  "description": "Warn when quitting if the vault's Git working tree has uncommitted changes.",
+  "author": "Top Tier Content",
+  "authorUrl": "https://top-tier-content.github.io/dirty-tree-warning/",
+  "isDesktopOnly": true
+}
